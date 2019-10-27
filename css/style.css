@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:focus {
+    outline: 0!important;
+}
+
+a{
+    transition:  all .2s ease-in-out;
+    -webkit-transition:  all .2s ease-in-out;
+    -moz-transition:  all .2s ease-in-out;
+    -o-transition:  all .2s ease-in-out;
+}
+.web-header-section {
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.web-header-section ul li{
+    padding: 0 5px;
+}
+.web-header-section ul li a{
+    color: #3f3f3f;
+}
+.web-header-section ul li a.active,
+.web-header-section ul li a:hover{
+    color: #fb4275;
+}

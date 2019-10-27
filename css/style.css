@@ -4,6 +4,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    color: #3f3f3f;
 }
 
 :focus {
@@ -16,6 +18,55 @@ a{
     -moz-transition:  all .2s ease-in-out;
     -o-transition:  all .2s ease-in-out;
 }
+.web-heading h1{
+    font-size: 3.5rem;
+}
+.web-heading span{
+    color: #fb4275;
+}
+.web-heading p{
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #818181;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #fb4275;
+    border-color: #fb4275;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #ff5584;
+    border-color: #ff5584;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(251, 66, 117, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #ff5584;
+    border-color: #ff5584;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #ff5584;
+    border-color: #ff5584;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(251, 66, 117, 0.5);
+  }
+
+/*---- Header ----*/
 .web-header-section {
     padding: 15px 0;
     position: absolute;
@@ -32,4 +83,39 @@ a{
 .web-header-section ul li a.active,
 .web-header-section ul li a:hover{
     color: #fb4275;
+}
+
+/*---- Slider ----*/
+.web-slider-section{
+    width: 100%;
+    display: inline-block;
+    padding: 150px 0;
+    background: url("../images/img-slider-section.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.web-slider-section a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+.web-slider-section .carousel-indicators{
+    bottom: -35px;
+}
+.web-slider-section .carousel-indicators li{
+    height: 10px;
+    background: #818181;
+    border: 0;
+    border-radius: 20px;
+    opacity: 1;
+    transition:  all .2s ease-in-out;
+    -webkit-transition:  all .2s ease-in-out;
+    -moz-transition:  all .2s ease-in-out;
+    -o-transition:  all .2s ease-in-out;
+}
+.web-slider-section .carousel-indicators li:hover{
+    background: #fb4275;
+}
+.web-slider-section .carousel-indicators li.active{
+    width: 45px;
+    background: #fb4275;
 }

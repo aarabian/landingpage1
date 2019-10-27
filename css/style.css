@@ -23,6 +23,13 @@ a{
 .web-heading h1{
     font-size: 3.5rem;
 }
+.web-heading h2{
+    font-size: 2.5rem;
+}
+.web-heading h3{
+    font-size: 1.5rem;
+    color: #fb4275;
+}
 .web-heading span{
     color: #fb4275;
 }
@@ -92,7 +99,7 @@ a{
     width: 100%;
     display: inline-block;
     padding: 150px 0;
-    background: url("../images/img-slider-section.png");
+    background: url(../images/img-slider-section.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -121,9 +128,11 @@ a{
     width: 45px;
     background: #fb4275;
 }
+
+/*---- Feature ----*/
 .web-feature-section{
     padding: 100px 0;
-    background: url("../images/img-feature-section.png");
+    background: url(../images/img-feature-section.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -132,4 +141,54 @@ a{
     padding: 60px 30px;
     background: #ffffff;
     border-radius: 10px;
-} 
+}
+
+/*---- About ----*/
+.web-about-section{
+    padding: 100px 0;
+    position: relative;
+    background: url(../images/img-about-section.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+.web-about-section .web-image{
+    max-width: max-content;
+}
+/* .web-about-section::before{
+    content: '';
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    background: url(../images/img-about-1.png);
+} */
+.web-about-section .web-about-tab{
+    margin: 0 0 25px;
+    color: #818181;
+}
+.web-about-section .web-about-tab svg{
+    margin: 0 15px 0 0;
+    color: #fb4275;
+}
+.web-about-section .web-about-tab .nav{
+    margin: 0 0 30px;
+    border: 0;
+}
+.web-about-section .web-about-tab .nav li a{
+    padding: 20px 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #3f3f3f;
+    border: 0;
+    border-bottom: 2px solid #dee2e6;
+}
+.web-about-section .web-about-tab .nav li a.active{
+    color: #fb4275;
+    border-color: #fb4275;
+}
+.web-about-section .web-about-tab p{
+    line-height: 1.75
+}

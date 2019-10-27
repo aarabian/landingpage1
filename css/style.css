@@ -99,9 +99,8 @@ a{
     width: 100%;
     display: inline-block;
     padding: 150px 0;
-    background: url(../images/img-slider-section.png);
+    background: url(../images/img-slider-section.png) no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
 }
 .web-slider-section a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -132,9 +131,8 @@ a{
 /*---- Feature ----*/
 .web-feature-section{
     padding: 100px 0;
-    background: url(../images/img-feature-section.png);
+    background: url(../images/img-feature-section.png) no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
 }
 .web-feature-section .web-feature-item{
     margin: 0 0 30px;
@@ -147,10 +145,9 @@ a{
 .web-about-section{
     padding: 100px 0;
     position: relative;
-    background: url(../images/img-about-section.png);
+    background: url(../images/img-about-section.png) no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .web-about-section .web-image{
     max-width: max-content;
@@ -191,4 +188,22 @@ a{
 }
 .web-about-section .web-about-tab p{
     line-height: 1.75
+}
+
+/*---- Steps ----*/
+.web-steps-section{
+    padding: 100px 0;
+    background: url(../images/img-step-section.png) no-repeat;
+    background-size: contain;
+}
+.web-steps-section .web-steps-line{
+    background: url(../images/img-step-line.png) no-repeat;
+    background-position: 60% 30%;
+}
+.web-steps-section .col-lg-3:nth-child(even){
+    margin: 225px 0 0;
+}
+.web-steps-section .web-steps-item{
+    margin: 0 0 3px;
+    padding: 60px 20px;
 }

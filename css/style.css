@@ -4,7 +4,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 700;
     color: #3f3f3f;
 }
 
@@ -17,6 +16,9 @@ a{
     -webkit-transition:  all .2s ease-in-out;
     -moz-transition:  all .2s ease-in-out;
     -o-transition:  all .2s ease-in-out;
+}
+.web-shadow{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
 }
 .web-heading h1{
     font-size: 3.5rem;
@@ -119,3 +121,15 @@ a{
     width: 45px;
     background: #fb4275;
 }
+.web-feature-section{
+    padding: 100px 0;
+    background: url("../images/img-feature-section.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.web-feature-section .web-feature-item{
+    margin: 0 0 30px;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+} 

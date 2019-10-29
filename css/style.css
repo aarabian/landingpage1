@@ -262,3 +262,20 @@ a:hover{
     -moz-transition:  all .4s ease-in-out;
     -o-transition:  all .4s ease-in-out;
 }
+
+/*---- Counter ----*/
+.web-counter-section{
+    padding: 100px 0;
+    background: #fb4275;
+    color: #ffffff;
+}
+.web-counter-section .web-counter-item span{
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.web-counter-section .web-counter-item .web-counter-number{
+    font-size: 2.5rem;
+}
+.web-counter-section .web-counter-item .web-counter-name{
+    font-size: 1.5rem;
+}

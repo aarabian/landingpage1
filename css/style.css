@@ -17,6 +17,9 @@ a{
     -moz-transition:  all .2s ease-in-out;
     -o-transition:  all .2s ease-in-out;
 }
+a:hover{
+    text-decoration: none;
+}
 .web-shadow{
     box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
 }
@@ -206,4 +209,56 @@ a{
 .web-steps-section .web-steps-item{
     margin: 0 0 3px;
     padding: 60px 20px;
+}
+
+/*---- Service ----*/
+.web-service-section{
+    padding: 0 0 100px;
+    background: url(../images/img-service-section.png) no-repeat;
+    background-size: contain;
+}
+.web-service-section .col-lg-6:nth-child(even){
+    margin: 30px 0 0;
+}
+.web-service-section .web-service-item{
+    padding: 45px 30px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.web-service-section .web-service-item h4{
+    margin: 30px 0 20px;
+    font-size: 1.15rem;
+}
+.web-service-section .web-service-item a{
+    display: inline-block;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3f3f3f;
+    text-transform: uppercase;
+}
+.web-service-section .web-service-item a:hover{
+    color: #fb4275;
+}
+.web-service-section .web-service-item a::after{
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    /* right: -30px; */
+    left: calc(100% + 10px);
+    background: #3f3f3f;
+    transition:  all .4s ease-in-out;
+    -webkit-transition:  all .4s ease-in-out;
+    -moz-transition:  all .4s ease-in-out;
+    -o-transition:  all .4s ease-in-out;
+}
+.web-service-section .web-service-item a:hover::after{
+    background: #fb4275;
+    left: calc(100% + 15px);
+    transition:  all .4s ease-in-out;
+    -webkit-transition:  all .4s ease-in-out;
+    -moz-transition:  all .4s ease-in-out;
+    -o-transition:  all .4s ease-in-out;
 }

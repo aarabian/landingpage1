@@ -404,7 +404,7 @@ a:hover {
     color: #fb4275;
 }
 
-/*---- Counter ----*/
+/*---- Review ----*/
 
 .web-review-section {
     padding: 100px 0;
@@ -444,3 +444,9 @@ a:hover {
 .web-review-section .carousel-control .carousel-control-next{
     left: 50px;
 }
+
+/*---- Project ----*/
+.web-project-section{
+
+}
+

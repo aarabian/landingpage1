@@ -411,29 +411,32 @@ a:hover {
     background: url(../images/img-customer-section.png) no-repeat;
     background-size: contain;
 }
-.web-review-section .web-review-content p{
+
+.web-review-section .web-review-content p {
     margin: 0 0 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     font-style: italic;
     color: #818181;
 }
-.web-review-section .web-review-content .name{
+
+.web-review-section .web-review-content .name {
     display: block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     font-size: 1.15rem;
 }
-.web-review-section .carousel-control{
+
+.web-review-section .carousel-control {
     position: absolute;
     bottom: 15%;
     left: 25%;
 }
-.web-review-section .carousel-control .carousel-control-prev,
-.web-review-section .carousel-control .carousel-control-next{
+
+.web-review-section .carousel-control .carousel-control-prev, .web-review-section .carousel-control .carousel-control-next {
     width: 45px;
     height: 45px;
-/*     display: inline-block; */
+    /*     display: inline-block; */
     line-height: 50px;
     margin: 3px;
     background: #fb4275;
@@ -441,12 +444,111 @@ a:hover {
     opacity: 1;
     border-radius: 4px;
 }
-.web-review-section .carousel-control .carousel-control-next{
+
+.web-review-section .carousel-control .carousel-control-next {
     left: 50px;
 }
 
 /*---- Project ----*/
-.web-project-section{
 
+.web-project-section {
+    padding: 100px 0;
+    background: url(../images/img-project-section.png) no-repeat;
+    background-size: contain;
 }
 
+/*---- Team ----*/
+
+.web-team-section {
+    padding: 100px 0;
+    background: url(../images/img-team-section.png) no-repeat;
+    background-size: contain;
+}
+
+.web-team-section .web-team-item .web-team-image {
+    position: relative;
+}
+
+.web-team-section .web-team-item .web-team-image svg {
+    position: absolute;
+    /* width: calc(100% + 1px); */
+    height: calc(100% + 1px);
+    top: -1px;
+    left: -1px;
+    z-index: 1;
+}
+
+.web-team-section .web-team-item .web-team-content {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.web-team-section .web-team-item .web-team-image img{
+    max-width: 100%;
+}
+
+.web-team-section .web-team-item .web-team-content:hover .web-team-social {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+.web-team-section .web-team-item .web-team-content .web-team-name {
+    padding: 15px 35px;
+    background: #ffffff;
+    line-height: 1;
+}
+.web-team-section .web-team-item .web-team-content .web-team-name p{
+    margin: 0;
+    color: #818181;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-name h5 {
+    color: #fb4275;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-social {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #ffffff;
+    font-size: 25px;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-social .fa-facebook {
+    color: #1d65e8;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-social .fa-twitter {
+    color: #18bbea;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-social .fa-linkedin {
+    color: #3862ae;
+}
+
+.web-team-section .web-team-item .web-team-content .web-team-social .fa-instagram {
+    color: #fb3958;
+}
+
+.web-team-section .web-team-item .web-team-content ul {
+    padding: 15px;
+}
+
+.web-team-section .web-team-item .web-team-content ul li {
+    display: inline-block;
+}

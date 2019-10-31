@@ -44,7 +44,7 @@ a:hover {
 }
 
 .web-heading p {
-    max-width: 800px;
+    max-width: 850px;
     margin: 30px auto;
     font-size: 1.15rem;
     line-height: 1.75;
@@ -385,11 +385,13 @@ a:hover {
 .web-pricing-section .web-pricing-content h4 {
     margin: 0 0 30px;
 }
-.web-pricing-section .web-pricing-content p{
+
+.web-pricing-section .web-pricing-content p {
     font-size: 1.05rem;
     line-height: 2;
     color: #818181;
 }
+
 .web-pricing-section .web-pricing-content li {
     font-size: 1.15rem;
     line-height: 2;
@@ -400,4 +402,45 @@ a:hover {
 .web-pricing-section .web-pricing-content li .fa-check {
     margin: 0 15px 0 0;
     color: #fb4275;
+}
+
+/*---- Counter ----*/
+
+.web-review-section {
+    padding: 100px 0;
+    background: url(../images/img-customer-section.png) no-repeat;
+    background-size: contain;
+}
+.web-review-section .web-review-content p{
+    margin: 0 0 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #818181;
+}
+.web-review-section .web-review-content .name{
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.web-review-section .carousel-control{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+}
+.web-review-section .carousel-control .carousel-control-prev,
+.web-review-section .carousel-control .carousel-control-next{
+    width: 45px;
+    height: 45px;
+/*     display: inline-block; */
+    line-height: 50px;
+    margin: 3px;
+    background: #fb4275;
+    color: #ffffff;
+    opacity: 1;
+    border-radius: 4px;
+}
+.web-review-section .carousel-control .carousel-control-next{
+    left: 50px;
 }

@@ -489,7 +489,8 @@ a:hover {
     border-radius: 10px;
     overflow: hidden;
 }
-.web-team-section .web-team-item .web-team-image img{
+
+.web-team-section .web-team-item .web-team-image img {
     max-width: 100%;
 }
 
@@ -500,12 +501,14 @@ a:hover {
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
 }
+
 .web-team-section .web-team-item .web-team-content .web-team-name {
     padding: 15px 35px;
     background: #ffffff;
     line-height: 1;
 }
-.web-team-section .web-team-item .web-team-content .web-team-name p{
+
+.web-team-section .web-team-item .web-team-content .web-team-name p {
     margin: 0;
     color: #818181;
 }
@@ -551,4 +554,26 @@ a:hover {
 
 .web-team-section .web-team-item .web-team-content ul li {
     display: inline-block;
+}
+
+/*---- Strategy ----*/
+.web-strategy-section{
+    padding: 100px 0;
+    background: #fb4275;
+    color: #ffffff;
+    background: linear-gradient(45deg, #fb4275 0, #f35d46 100%);
+    background: -webkit-linear-gradient(45deg, #fb4275 0, #f35d46 100%);
+    background: -moz-linear-gradient(45deg, #fb4275 0, #f35d46 100%);
+    background: -o-linear-gradient(45deg, #fb4275 0, #f35d46 100%);
+}
+.web-strategy-section h2,
+.web-strategy-section p{
+    color: #ffffff;
+}
+
+.web-strategy-section a{
+    color: #fb4275;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
 }

@@ -94,6 +94,17 @@ a:hover {
     left: 0;
 }
 
+.web-header-fixed {
+    position: fixed;
+    background: #ffffff;
+    z-index: 100;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+}
+
 .web-header-section ul li {
     padding: 0 5px;
 }
@@ -403,6 +414,44 @@ a:hover {
     margin: 0 15px 0 0;
     color: #fb4275;
 }
+
+.web-pricing-section .web-pricing-content .tab-content .tab-pane{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -10%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -10%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
 
 /*---- Review ----*/
 
@@ -753,7 +802,7 @@ a:hover {
 
 .web-footer-section {
     padding: 100px 0 0;
-    background: #f8f9fa url(../images/img-footer-top-section.png) no-repeat;
+    background: #f8f9fa url(../images/img-footer-section.png) no-repeat;
     background-size: contain;
 }
 
@@ -781,11 +830,11 @@ a:hover {
 
 .web-footer-top-section .web-contact-section img {
     width: 50%;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
 }
 
 .web-footer-top-section .web-contact-content {
-    padding: 10px 0 0;
+    padding: 0 0 10px 0;
 }
 
 .web-footer-top-section .web-contact-content span {
@@ -803,7 +852,7 @@ a:hover {
 .web-footer-top-section .web-gallery-section ul li {
     width: 33.33%;
     float: left;
-    padding: 5px 10px 5px 0;
+    padding: 0 10px 10px 0;
     list-style: none;
 }
 
@@ -900,4 +949,123 @@ a:hover {
 
 .web-footer-bottom-section .web-footer-copyright a {
     color: #fb4275;
+}
+
+/*---- Break Points  ----*/
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
+        background: #fb4275;
+        z-index: 100;
+    }
+    .web-header-section ul li {
+        padding: 0 15px;
+    }
+    .web-header-section ul li a {
+        color: #ffffff;
+    }
+    .web-header-section ul li.active a, .web-header-section ul li:hover a {
+        padding-left: 20px;
+        color: #f5f5f5;
+        background: #ff5584;
+    }
+    .web-heading h1 {
+        font-size: 2.5rem;
+    }
+    .web-slider-section {
+        padding: 150px 0 60px;
+    }
+    .web-feature-section .web-feature-item {
+        padding: 25px 15px;
+    }
+    .web-steps-section .web-steps-line {
+        background: transparent;
+    }
+    .web-steps-section .col-lg-3:nth-child(even) {
+        margin: 0;
+    }
+    .web-steps-section .web-steps-item {
+        padding: 15px;
+    }
+    .web-service-section .web-heading {
+        padding: 35px 0;
+        text-align: center;
+    }
+    .web-service-section .col-lg-6:nth-child(even) {
+        margin: 0;
+    }
+    .web-service-section .web-service-item {
+        margin: 15px 0;
+    }
+    .web-feature-section, .web-steps-section, .web-service-section, .web-about-section, .web-counter-section, .web-pricing-section, .web-review-section, .web-project-section, .web-team-section, .web-strategy-section, .web-blog-section, .web-blog1-section, .web-footer-section {
+        padding: 60px 0;
+    }
+    .web-counter-section .web-counter-item .web-counter-name {
+        font-size: 1.1rem;
+    }
+    .web-pricing-section .nav li a {
+        padding: 15px 10px;
+    }
+    .web-pricing-section .nav {
+        margin: 15px 0;
+    }
+    .web-review-section .web-review-content p {
+        font-size: 1.2rem;
+    }
+    .web-review-section .carousel-control .carousel-control-prev, .web-review-section .carousel-control .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+    .web-review-section .carousel-control .carousel-control-next {
+        left: 40px;
+    }
+    .web-review-section .carousel-control {
+        bottom: 18%;
+        left: 23%;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .web-team-section .web-team-item .web-team-content {
+        max-width: 90%;
+    }
+    .web-team-section .web-team-item .web-team-content .web-team-name h5 {
+        font-size: 1.1rem;
+    }
+    .web-team-section .web-team-item .web-team-content .web-team-name p {
+        font-size: .80rem;
+    }
+    .web-team-section .web-team-item .web-team-content .web-team-social {
+        font-size: 1.1rem;
+    }
+    .web-strategy-section h2 {
+        font-size: 2.3rem;
+        ;
+    }
+    .web-blog-section .web-blog-item .web-blog-content h3 {
+        font-size: 1.4rem;
+    }
+    .web-blog1-section .web-blog1-item img {
+        height: 390px;
+    }
+    .web-blog1-section .web-blog1-item .web-blog1-content h3 {
+        font-size: 1.3rem;
+    }
+    .web-footer-top-section .web-gallery-section ul li {
+        width: 50%;
+    }
+    .web-footer-top-section .web-contact-content {
+        padding: 10px 0 10px 0;
+    }
+    .web-footer-top-section .web-contact-content a, p {
+        font-size: .85rem;
+    }
+    .web-footer-top-section .web-menu-section li a {
+        font-size: .85rem;
+    }
+    .web-footer-top-section .web-contact-section img {
+        width: 60%;
+        padding: 0 0 15px 0;
+    }
 }

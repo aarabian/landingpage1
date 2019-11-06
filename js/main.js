@@ -16,6 +16,10 @@ jQuery(document).ready(function ($) {
             menu.removeClass('web-header-fixed');
         }
     });
+    $(function () {
+        var containerEl = document.querySelector('#mix-gallery');
+        var mixer = mixitup(containerEl);
+    });
 });
 
 /* var waypoint = new Waypoint({

@@ -503,9 +503,26 @@ a:hover {
 .web-project-section {
     padding: 100px 0;
     background: url(../images/img-project-section.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
+.web-project-section .web-filter-button{
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+.web-project-section .web-project-gallery .web-project-item{
+    float: left;
+    width: 100%;
+    max-width: 32%;
+    margin: 5px;
+    text-align: center;
+    background: #000000;
+}
+.web-project-section .web-project-gallery .web-project-item img{
+    height: 190px;
+    object-fit: cover;
+    border-radius: 3px;
+}
 /*---- Team ----*/
 
 .web-team-section {
